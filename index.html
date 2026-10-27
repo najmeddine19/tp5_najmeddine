@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FormaPlus — Tableau de bord</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+ 
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#accueil">
+            FormaPlus<span class="text-primary">.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Afficher ou masquer le menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#accueil" aria-current="page">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formations">Mes formations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#activites">Activités</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#inscription">Inscription</a>
+                </li>
+            </ul>
+
+            <a class="btn btn-outline-light btn-sm ms-lg-3" href="#inscription">
+                Mon espace
+            </a>
+        </div>
+    </div>
+</nav>
+
+  <main>
+    
+<!-- Bandeau d'accueil -->
+<header id="accueil" class="bg-primary bg-gradient text-white py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <!-- Colonne gauche : Texte d'accueil -->
+      <div class="col-12 col-lg-7">
+        <div>
+          <p class="text-uppercase fw-bold small mb-3">
+            APPRENDRE · PROGRESSER · RÉUSSIR
+          </p>
+
+          <h1 class="display-4 fw-bold mb-3">
+            Développez vos compétences, à votre rythme.
+          </h1>
+
+          <p class="lead mb-4">
+            Retrouvez vos formations, suivez votre progression et découvrez de nouvelles compétences grâce à FormaPlus.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#formations" class="btn btn-light btn-lg">
+              Découvrir mes formations
+            </a>
+
+            <a href="#inscription" class="btn btn-outline-light btn-lg">
+              Créer un compte
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colonne droite : Panneau de statistiques -->
+      <div class="col-12 col-lg-5">
+        <div class="bg-white text-dark rounded-4 shadow p-4">
+
+          <!-- Titre et symbole -->
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h4 fw-bold mb-0">
+              Votre espace d’apprentissage
+            </h2>
+
+            <span class="d-flex align-items-center justify-content-center rounded-3 bg-primary-subtle text-primary p-3">
+              ✦
+            </span>
+          </div>
+
+          <p class="text-secondary mb-3">
+            Un aperçu de vos objectifs
+          </p>
+
+          <!-- Deux mini-statistiques -->
+          <div class="row g-3 mb-4">
+
+            <div class="col-6">
+              <div class="border rounded-3 p-3 h-100">
+                <p class="text-secondary small mb-2">
+                  Formations suivies
+                </p>
+                <p class="fs-2 fw-bold mb-0">3</p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="border rounded-3 p-3 h-100">
+                <p class="text-secondary small mb-2">
+                  Heures apprises
+                </p>
+                <p class="fs-2 fw-bold mb-0">24 h</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Objectif mensuel -->
+          <div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="small">Objectif mensuel</span>
+              <span class="small fw-bold">80 %</span>
+            </div>
+
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Objectif mensuel"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="80">
+
+              <div class="progress-bar" style="width: 80%"></div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+
+    <!-- Statistiques -->
+    
+<section id="statistiques" class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Carte 1 -->
+      <div class="col-12 col-sm-6 col-xl-3">
+        <article class="card h-100 border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-3 p-3 mb-3 bg-primary-subtle text-primary">
+              📚
+            </div>
+            <p class="small text-secondary mb-2">
+              Formations suivies
+            </p>
+            <p class="display-6 fw-bold mb-2">03</p>
+            <p class="text-muted mb-0">
+              Continuez sur votre lancée
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Carte 2 -->
+      <div class="col-12 col-sm-6 col-xl-3">
+        <article class="card h-100 border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-3 p-3 mb-3 bg-info-subtle text-info">
+              ⏱️
+            </div>
+            <p class="small text-secondary mb-2">
+              Heures d’apprentissage
+            </p>
+            <p class="display-6 fw-bold mb-2">24 h</p>
+            <p class="text-muted mb-0">
+              Cette année
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Carte 3 -->
+      <div class="col-12 col-sm-6 col-xl-3">
+        <article class="card h-100 border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-3 p-3 mb-3 bg-success-subtle text-success">
+              🏆
+            </div>
+            <p class="small text-secondary mb-2">
+              Certificats obtenus
+            </p>
+            <p class="display-6 fw-bold mb-2">02</p>
+            <p class="text-muted mb-0">
+              Vos réussites comptent
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Carte 4 -->
+      <div class="col-12 col-sm-6 col-xl-3">
+        <article class="card h-100 border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-3 p-3 mb-3 bg-warning-subtle text-warning">
+              🎯
+            </div>
+            <p class="small text-secondary mb-2">
+              Objectif atteint
+            </p>
+            <p class="display-6 fw-bold mb-2">80 %</p>
+            <p class="text-muted mb-0">
+              Encore un petit effort
+            </p>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Recherche -->
+    <section id="recherche">
+      <div>
+        <div>
+          <p>💡 Astuce : utilisez la recherche pour retrouver rapidement une formation adaptée à vos besoins.</p>
+          <a href="#formations">Voir toutes les formations</a>
+        </div>
+        <div>
+          <h2>Rechercher une formation</h2>
+          <form action="#formations" method="get">
+            <div>
+              <label for="keyword">Mot-clé</label>
+              <input type="search" id="keyword" name="keyword" placeholder="Ex. : HTML, base de données…">
+            </div>
+            <div>
+              <label for="category">Catégorie</label>
+              <select id="category" name="category">
+                <option value="">Toutes les catégories</option>
+                <option value="web">Développement web</option>
+                <option value="database">Bases de données</option>
+                <option value="framework">Frameworks</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit">Rechercher</button>
+              <button type="reset">Réinitialiser</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formations -->
+    <section id="formations">
+      <div>
+        <div>
+          <div><p>VOTRE PARCOURS</p><h2>Reprenez là où vous en êtes</h2></div>
+          <a href="#recherche">Explorer le catalogue →</a>
+        </div>
+        <div>
+          <div>
+            <article>
+              <div style="height: 150px"><span>💻</span></div>
+              <div>
+                <div><span>Débutant</span><span>8 modules</span></div>
+                <h3>Développement web</h3>
+                <p>Apprenez à créer des pages web modernes avec HTML, CSS et les bases du JavaScript.</p>
+                <div>
+                  <div><span>Votre progression</span><span>65 %</span></div>
+                  <div role="progressbar" aria-label="Progression Développement web" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65">
+                    <div style="width: 65%"></div>
+                  </div>
+                </div>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#courseModal" data-course="Développement web" data-progress="65">Continuer la formation</button>
+              </div>
+            </article>
+          </div>
+          <div>
+            <article>
+              <div style="height: 150px"><span>🗄️</span></div>
+              <div>
+                <div><span>Intermédiaire</span><span>6 modules</span></div>
+                <h3>Bases de données</h3>
+                <p>Maîtrisez les modèles relationnels et apprenez à interroger une base avec SQL.</p>
+                <div>
+                  <div><span>Votre progression</span><span>40 %</span></div>
+                  <div role="progressbar" aria-label="Progression Bases de données" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+                    <div style="width: 40%"></div>
+                  </div>
+                </div>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#courseModal" data-course="Bases de données" data-progress="40">Continuer la formation</button>
+              </div>
+            </article>
+          </div>
+          <div>
+            <article>
+              <div style="height: 150px"><span>🧩</span></div>
+              <div>
+                <div><span>Avancé</span><span>10 modules</span></div>
+                <h3>Symfony</h3>
+                <p>Découvrez un framework PHP robuste pour concevoir des applications web structurées.</p>
+                <div>
+                  <div><span>Votre progression</span><span>20 %</span></div>
+                  <div role="progressbar" aria-label="Progression Symfony" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20">
+                    <div style="width: 20%"></div>
+                  </div>
+                </div>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#courseModal" data-course="Symfony" data-progress="20">Continuer la formation</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activités -->
+    <section id="activites">
+      <div>
+        <div><p>VOTRE ACTIVITÉ</p><h2>Dernières activités</h2></div>
+        <div>
+          <table>
+            <thead><tr><th>Formation</th><th>Dernière activité</th><th>Date</th><th>État</th><th>Action</th></tr></thead>
+            <tbody>
+              <tr><td>Développement web</td><td>Les formulaires HTML</td><td>24 octobre 2026</td><td><span>En cours</span></td><td><a href="#formations">Reprendre</a></td></tr>
+              <tr><td>Bases de données</td><td>Les requêtes SELECT</td><td>22 octobre 2026</td><td><span>Terminé</span></td><td><a href="#formations">Consulter</a></td></tr>
+              <tr><td>Symfony</td><td>Découverte du framework</td><td>19 octobre 2026</td><td><span>À reprendre</span></td><td><a href="#formations">Reprendre</a></td></tr>
+              <tr><td>Développement web</td><td>Les liens et les images</td><td>16 octobre 2026</td><td><span>Terminé</span></td><td><a href="#formations">Consulter</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <nav aria-label="Navigation des activités">
+          <ul>
+            <li><a href="#activites">Précédent</a></li><li><a href="#activites" aria-current="page">1</a></li><li><a href="#activites">2</a></li><li><a href="#activites">3</a></li><li><a href="#activites">Suivant</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Inscription -->
+    <section id="inscription">
+      <div>
+        <div>
+          <p>REJOIGNEZ-NOUS</p>
+          <h2>Prêt à faire évoluer vos compétences ?</h2>
+          <p>Créez votre compte FormaPlus et construisez votre parcours de formation dès aujourd’hui.</p>
+        </div>
+        <div>
+          <h2>Créer votre compte</h2>
+          <form action="#inscription" method="post">
+            <div>
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div>
+              <label for="email">Adresse e-mail</label>
+              <input type="email" id="email" name="email" placeholder="nom@exemple.fr" required>
+            </div>
+            <div>
+              <label for="level">Votre niveau</label>
+              <select id="level" name="level" required>
+                <option value="">Sélectionnez un niveau</option><option>Débutant</option><option>Intermédiaire</option><option>Avancé</option>
+              </select>
+            </div>
+            <div>
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">J’accepte les conditions d’utilisation.</label>
+            </div>
+            <button type="submit">Créer mon compte</button>
+            <p>Vos données restent confidentielles. Vous pourrez modifier vos préférences à tout moment.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  
+
+  <!-- Fenêtre modale -->
+  <div id="courseModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+    <div>
+      <div>
+        <div>
+          <h2 id="courseModalLabel">Reprendre une formation</h2>
+          <button type="button" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div>
+          <p>Vous souhaitez poursuivre la formation :</p>
+          <p id="modalCourseName">Développement web</p>
+          <div><span>Progression actuelle</span><span id="modalProgressText">65 %</span></div>
+          <div id="modalProgressBar" role="progressbar" aria-label="Progression de la formation" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65">
+            <div id="modalProgressFill" style="width: 65%"></div>
+          </div>
+        </div>
+        <div>
+          <button type="button" data-bs-dismiss="modal">Fermer</button>
+          <a href="#formations">Voir le programme</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Le script Bootstrap est fourni pour permettre les interactions des composants. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6 col-lg-5">
+        <a href="#accueil" class="navbar-brand fw-bold text-white text-decoration-none">
+          FormaPlus<span class="text-primary">.</span>
+        </a>
+        <p class="text-white-50 mt-2 mb-0">
+          Une platforme fictive pour apprendre, progresser et transformer ses idées en compétences.
+        </p>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <h2 class="h6 text-white">Platforme</h2>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="#formation" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover">Formation</a>
+          </li>
+          <li class="mb-2">
+            <a href="#mes_activités" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover">Mes activités</a>
+          </li>
+          <li class="mb-2">
+            <a href="#inscription" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover">Inscription</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <h2 class="h6 text-white">Aide</h2>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="#centre_d'aide" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover">Centre d'aide</a>
+          </li>
+          <li class="mb-2">
+            <a href="#nous_contacter" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover">Nous contacter</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary my-4">
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between gap-2">
+      <p class="text-white-50 small mb-0">
+        © 2026 FormaPlus. Tous droits réservés.
+      </p>
+      <a href="#inscription" class="link-light link-underline-opacity-0 link-underline-opacity-75-hover small">
+        Conditions d’utilisation
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
